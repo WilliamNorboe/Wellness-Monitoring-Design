@@ -5,6 +5,8 @@ body{
     /* width: 100%; */
 }
 
+
+/* top navigation bar */
 .toprow{
     display: flex;
     align-items: center;
@@ -21,3 +23,24 @@ body{
     gap: 50px;
 }
 
+.tabs{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+/* buttons */
+#home, .tabbtn{
+    font-size: 20px;
+    border: none;
+    padding: 20px;
+}
+#home{
+    color: white;
+    background-color: darkblue;
+}
+.tabbtn{
+    background-color: transparent;
+    border-radius: 40px;
+}
