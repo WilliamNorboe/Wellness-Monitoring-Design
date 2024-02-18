@@ -9,13 +9,15 @@ body{
     display: flex;
     align-items: center;
     background-color: darkblue;
-    margin: 0px;
-    padding: 0px;
+    padding: 30px;
+    font-size: 23px;
     color: white;
     font-weight: bold;
+    justify-content: space-between;
 }
 
-.topNav{
-    
+.topnav{
+    display: flex;
+    gap: 50px;
 }
 
