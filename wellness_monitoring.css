@@ -44,3 +44,10 @@ body{
     background-color: transparent;
     border-radius: 40px;
 }
+
+/* main page */
+.pagetitle{
+    font-size: 50px;
+    padding: 40px;
+    color: darkblue;
+}
