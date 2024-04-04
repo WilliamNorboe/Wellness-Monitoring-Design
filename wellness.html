@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellness Monitor</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Reference to the CSS file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">Health-e-Messaging</div>
+        <div class="nav-links">
+          <a href="#">Settings</a>
+          <a href="#">Help</a>
+          <a href="#">Profile</a>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-header">
+      <div class="nav-content">
+        <div class="nav-box">UC Davis Health</div>
+        <a class="header-links" href="#">Wellness Monitor</a>
+        <a class="header-links" href="#">Appointments</a>
+        <a class="header-links" href="#">Messages</a>
+        <a class="header-links" href="#">Lab Results</a>
+        <a class="header-links" href="#">Report COVID</a>
+        <a class="header-links" href="#">Medical Clearances</a>
+      </div>
+    </nav>
+    <div class="border"></div>
+    <h1 class="title">Wellness Monitor</h1>
+    <div class="container">
+      <div class="column">
+        <!-- Left Column -->
+        <div class="box" style="margin-top: 52px">
+          <button class="round-button">SC</button>
+          <span class="button-text"><b>Sofia Cho</b></span>
+          <div class="contact-details">
+            <p><i class="fas fa-envelope"></i>example@example.com</p>
+            <p><i class="fas fa-phone"></i>123-456-7890</p>
+          </div>
+          <div class="loggedin-details">
+            <p id="last-login"></p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-title">Basic Information</div>
+          <hr />
+          <div class="content">
+            <div class="left">
+              <span style="color: gray; font-weight: bold">Name</span>
+              <div class="brief-details"><b>Sophia Cho</b></div>
+            </div>
+            <div class="right">
+              <span style="color: gray; font-weight: bold">Birthdate</span>
+              <div class="brief-details"><b>April 22, 2002</b></div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <span style="color: gray; font-weight: bold">Insurance</span>
+              <div class="brief-details"><b>Anthem Blue Cross</b></div>
+            </div>
+            <div class="right">
+              <span style="color: gray; font-weight: bold">Height</span>
+              <div class="brief-details"><b>5'6"</b></div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <span style="color: gray; font-weight: bold">Insurance ID</span>
+              <div class="brief-details"><b>ABCDE12345</b></div>
+            </div>
+            <div class="right">
+              <span style="color: gray; font-weight: bold">Weight</span>
+              <div class="brief-details"><b>112 lb.</b></div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <span style="color: gray; font-weight: bold">Insurance Plan</span>
+              <div class="brief-details"><b>Student</b></div>
+            </div>
+            <div class="right">
+              <span style="color: gray; font-weight: bold">Blood type</span>
+              <div class="brief-details"><b>O+</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-title">Immunizations</div>
+          <hr />
+          <!-- Line below Current Medications heading -->
+          <!-- Sub-box for Medication A -->
+          <div class="sub-box">
+            <div><b>COVID Booster 1</b></div>
+            <!-- Title -->
+            <div class="brief-details">Date received - Facility name</div>
+            <!-- Brief details -->
+          </div>
+          <!-- Sub-box for Medication B -->
+          <div class="sub-box">
+            <div><b>Influenza</b></div>
+            <!-- Title -->
+            <div class="brief-details">Date received - Facility name</div>
+            <!-- Brief details -->
+          </div>
+          <!-- View More Button -->
+          <a class="view-more openPopup" data-content="content1" >View More</a>
+        </div>
+      </div>
+      <div class="column">
+        <!-- Middle Column -->
+        <div class="box" style="margin-top: 50px">
+          <!-- Add margin-top for space -->
+          <div class="box-title">Allergies & Medical Conditions</div>
+          <div class="line"></div>
+          <!-- Extended line -->
+          <div class="box-heading">Allergies</div>
+          <div class="allergy-box">
+            <div class="severity-box">
+              <div>Allergy of Highest Severity</div>
+              <div class="severe">SEVERE</div>
+              <div class="brief-details">Brief details of allergy</div>
+            </div>
+            <div class="severity-box">
+              <div>Allergy of Next Highest Severity</div>
+              <div class="moderate">MODERATE</div>
+              <div class="brief-details">Brief details of allergy</div>
+            </div>
+          </div>
+          <hr />
+          <!-- Line below Allergies -->
+          <div class="sub-heading">Medical Conditions</div>
+          <!-- Subheading -->
+          <div class="sub-box">
+            <!-- Sub-box for Medical Condition A -->
+            <div>Medical Condition A</div>
+            <!-- Title -->
+            <div class="brief-details">Brief details of medical condition</div>
+            <!-- Brief details -->
+          </div>
+          <!-- View More Button -->
+          <a class="view-more openPopup" data-content="content2">View More</a>
+        </div>
+        <!-- New Main Box for Current Medications -->
+        <div class="box">
+          <div class="box-title">Current Medications</div>
+          <hr />
+          <!-- Line below Current Medications heading -->
+          <!-- Sub-box for Medication A -->
+          <div class="sub-box">
+            <div>Medication A</div>
+            <!-- Title -->
+            <div class="brief-details">2 times per day for 4 weeks</div>
+            <!-- Brief details -->
+          </div>
+          <!-- Sub-box for Medication B -->
+          <div class="sub-box">
+            <div>Medication B</div>
+            <!-- Title -->
+            <div class="brief-details">1 time a week for 6 months</div>
+            <!-- Brief details -->
+          </div>
+          <!-- View More Button -->
+          <a class="view-more openPopup" data-content="content3">View More</a>
+        </div>
+      </div>
+      <div class="column">
+        <!-- Right Column -->
+        <div class="box" style="margin-top: 50px">
+          <div class = "caldenderinfo">
+            <div class="box-title">Wellness Tracker</div>
+            <div class = "arrows">
+              <button><</button>
+              <button>></button>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="box-title">February 2024</div>
+          <div class = "days">
+            <div class = "day">
+              <div>11</div>
+              <p>Sun</p>
+            </div>
+            <div class = "day">
+              <div>12</div>
+              <p>Mon</p>
+            </div>
+            <div class = "day">
+              <div>13</div>
+              <p>Tues</p>
+            </div>
+            <div class = "day">
+              <div>14</div>
+              <p>Wed</p>
+            </div>
+            <div class = "day">
+              <div>15</div>
+              <p>Thurs</p>
+            </div>
+          </div>
+          <hr />
+          <div class="box-heading">Today Mon 2/12</div>
+          <div class="sub-box">
+            <div>Medication A</div>
+            <!-- Title -->
+            <div class="brief-details">Brief details of medication</div>
+            <!-- Brief details -->
+          </div>
+          <div class="sub-box">
+            <div>Appointment A</div>
+            <!-- Title -->
+            <div class="brief-details">2:45 PM PST at UC Davis Building 7</div>
+            <!-- Brief details -->
+          </div>
+          <div class="sub-box">
+            <div>Appointment B</div>
+            <!-- Title -->
+            <div class="brief-details">6:45 PM PST at UC Davis Building 5</div>
+            <!-- Brief details -->
+          </div>
+          <div class="box-heading">Tues 2/13</div>
+          <div class="sub-box">
+            <div>Medication A</div>
+            <!-- Title -->
+            <div class="brief-details">Brief details of medication</div>
+            <!-- Brief details -->
+          </div>
+          <div class="sub-box">
+            <div>Immunization Appointment A</div>
+            <!-- Title -->
+            <div class="brief-details">2:45 PM PST at UC Davis Building 7</div>
+            <!-- Brief details -->
+          </div>
+          <a class="view-more openPopup" data-content="content5">View Future</a>
+        </div>
+        <!-- Add your content here -->
+      </div>
+    </div>
+
+<!-- pop ups go here -->
+
+<div id="popupWrapper">
+  <div class="popupContent" id="content1">
+    <span class="closePopup">&times;</span>
+    <div class="box-title">Immunizations</div>
+    <hr />
+      <div class="column">
+
+        <div class="allergy-box">
+          <div class="box-title">Immunization</div>
+          <div class="severity-box">
+            <div>COVID Vaccine</div>
+            <div class="brief-details">Received 10/23/2024</div>
+          </div>
+          <div class="severity-box">
+            <div>Influenza</div>
+            <div class="brief-details">Received 10/23/2024</div>
+          </div>
+          <div class="severity-box">
+            <div>Covid Booster</div>
+            <div class="brief-details">Received 10/23/2024</div>
+          </div>
+        </div>
+
+      </div>
+
+
+  </div>
+
+  <div class="popupContent" id="content2">
+    <span class="closePopup">&times;</span>
+    <div class="box-title">Allergies & Medical Conditions</div>
+    <hr />
+    <div class="container">
+      <div class="column">
+
+        <div class="allergy-box">
+          <div class="box-title">Allergies</div>
+          <div class="severity-box">
+            <div>Allergy of Highest Severity</div>
+            <div class="severe">SEVERE</div>
+            <div class="brief-details">Brief details of allergy</div>
+          </div>
+          <div class="severity-box">
+            <div>Allergy of Next Highest Severity</div>
+            <div class="moderate">MODERATE</div>
+            <div class="brief-details">Brief details of allergy</div>
+          </div>
+          <div class="severity-box">
+            <div>Allergy of Next Highest Severity</div>
+            <div class="mild">MODERATE</div>
+            <div class="brief-details">Brief details of allergy</div>
+          </div>
+          <div class="severity-box">
+            <div>Allergy of Next Highest Severity</div>
+            <div class="mild">MODERATE</div>
+            <div class="brief-details">Brief details of allergy</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="column">
+        <div class="box-title">Medical Conditions</div>
+        <div class="sub-box">
+          <!-- Sub-box for Medical Condition A -->
+          <div>Medical Condition A</div>
+          <!-- Title -->
+          <div class="brief-details">Brief details of medical condition</div>
+          <!-- Brief details -->
+        </div>
+        <div class="sub-box">
+          <!-- Sub-box for Medical Condition A -->
+          <div>Medical Condition B</div>
+          <!-- Title -->
+          <div class="brief-details">Brief details of medical condition</div>
+          <!-- Brief details -->
+        </div>
+        <div class="sub-box">
+          <!-- Sub-box for Medical Condition A -->
+          <div>Medical Condition C</div>
+          <!-- Title -->
+          <div class="brief-details">Brief details of medical condition</div>
+          <!-- Brief details -->
+        </div>
+        <div class="sub-box">
+          <!-- Sub-box for Medical Condition A -->
+          <div>Medical Condition D</div>
+          <!-- Title -->
+          <div class="brief-details">Brief details of medical condition</div>
+          <!-- Brief details -->
+        </div>
+        <div class="sub-box">
+          <!-- Sub-box for Medical Condition A -->
+          <div>Medical Condition E</div>
+          <!-- Title -->
+          <div class="brief-details">Brief details of medical condition</div>
+          <!-- Brief details -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popupContent" id="content3">
+    <span class="closePopup">&times;</span>
+
+
+    <div class="box-title">Medications</div>
+    <hr />
+    <div class="container">
+      <div class="column">
+
+        <div class="allergy-box">
+          <div class="box-title">Medication</div>
+          <div class="severity-box">
+            <div>Medication A</div>
+            <div class="brief-details" style = "color: transparent">info</div>
+          </div>
+          <div class="severity-box">
+            <div>Medication B</div>
+            <div class="brief-details" style = "color: transparent">info</div>
+          </div>
+          <div class="severity-box">
+            <div>Medication C</div>
+            <div class="brief-details" style = "color: transparent">info</div>
+          </div>
+          <div class="severity-box">
+            <div>Medication D</div>
+            <div class="brief-details" style = "color: transparent">info</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="column">
+        <div class="box-title">Frequency & Duration</div>
+        <div class="sub-box">
+          <!-- Sub-box for Medical Condition A -->
+          <div>2 Time per day</div>
+          <!-- Title -->
+          <div class="brief-details">4 weeks</div>
+          <!-- Brief details -->
+        </div>
+        <div class="sub-box">
+          <!-- Sub-box for Medical Condition A -->
+          <div>1 Time Per Week</div>
+          <!-- Title -->
+          <div class="brief-details">6 months</div>
+          <!-- Brief details -->
+        </div>
+        <div class="sub-box">
+          <!-- Sub-box for Medical Condition A -->
+          <div>1 Time Per Month</div>
+          <!-- Title -->
+          <div class="brief-details">6 moths</div>
+          <!-- Brief details -->
+        </div>
+        <div class="sub-box">
+          <!-- Sub-box for Medical Condition A -->
+          <div>1 Time Per Day</div>
+          <!-- Title -->
+          <div class="brief-details">1 Week</div>
+          <!-- Brief details -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="popupContent" id="content5">
+    <span class="closePopup">&times;</span>
+    <div class = "caldenderinfo" style="margin-right: 40px;">
+      <div class="box-title">Wellness Tracker</div>
+      <div class = "arrows">
+        <button><</button>
+        <button>></button>
+      </div>
+    </div>
+    <hr />
+
+
+    <div class = "days">
+      <div class = "day">
+        <div>11</div>
+        <p>Sun</p>
+      </div>
+      <div class = "day">
+        <div>12</div>
+        <p>Mon</p>
+      </div>
+      <div class = "day">
+        <div>13</div>
+        <p>Tues</p>
+      </div>
+      <div class = "day">
+        <div>14</div>
+        <p>Wed</p>
+      </div>
+      <div class = "day">
+        <div>15</div>
+        <p>Thurs</p>
+      </div>
+      <div class = "day">
+        <div>16</div>
+        <p>Fri</p>
+      </div>
+      <div class = "day">
+        <div>17</div>
+        <p>Thurs</p>
+      </div>
+    </div>
+
+    <div class="box-heading" style="padding-top: 30px;">Today Mon 2/12</div>
+          <div class="sub-box">
+            <div>Medication A</div>
+            <!-- Title -->
+            <div class="brief-details">Brief details of medication</div>
+            <!-- Brief details -->
+          </div>
+          <div class="sub-box">
+            <div>Appointment A</div>
+            <!-- Title -->
+            <div class="brief-details">2:45 PM PST at UC Davis Building 7</div>
+            <!-- Brief details -->
+          </div>
+          <div class="sub-box">
+            <div>Appointment B</div>
+            <!-- Title -->
+            <div class="brief-details">6:45 PM PST at UC Davis Building 5</div>
+            <!-- Brief details -->
+          </div>
+  </div>
+  
+</div>
+
+  </body>
+  <script src="popup.js"></script>
+</html>

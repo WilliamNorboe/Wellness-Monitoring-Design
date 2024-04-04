@@ -1,0 +1,334 @@
+html{
+    font-family: Calibri, sans-serif;
+  }
+  .header {
+    background-color: rgb(35, 35, 113);
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .nav-header {
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    height: 40px;
+  }
+  .border {
+    padding: 5px 0px 0px 0px;
+    border-bottom: 2px solid rgb(35, 35, 113);
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .nav-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-box {
+    background-color: rgb(35, 35, 113);
+    height: 30px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(201, 201, 73);
+  }
+  
+  .nav-content a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-content a:hover {
+    background-color: #eff4ff;
+    border: 2px solid lightblue;
+    color: rgb(35, 35, 113);
+  }
+  
+  .title {
+    margin-top: 70px;
+    margin-bottom: -50px;
+    text-align: left;
+    color: rgb(35, 35, 113);
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Calibri, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .content {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .round-button {
+    border-radius: 50%; /* Make the button round */
+    width: 50px; /* Set the width of the button */
+    height: 50px; /* Set the height of the button */
+    background-color: #9f81d9;
+    color: white; /* Set the text color of the button */
+    border: none; /* Remove the border */
+    text-align: center; /* Center the text horizontally */
+    text-decoration: none; /* Remove underlines from the text */
+    display: inline-block; /* Make sure the button behaves like a block element */
+    font-size: 16px; /* Set the font size of the text */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+  
+  .button-text {
+    font-size: 16px;
+    /* margin-bottom: 5px; */
+    vertical-align: top;
+    margin-left: 20px;
+  }
+  
+  .contact-info {
+    margin-top: 10px; /* Add margin for spacing */
+  }
+  
+  .contact-details {
+    display: flex; /* Use flexbox to make the items side by side */
+    font-size: 12px;
+    margin-left: 72px;
+    margin-top: -40px;
+    font-weight: bold;
+  }
+  
+  .contact-details p {
+    margin-right: 20px; /* Add margin between email and phone number */
+  }
+  
+  .loggedin-details {
+    font-size: 12px;
+    margin-left: 72px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    color: gray; /* Set the text color to gray */
+    font-weight: bold;
+    /* margin-right: 20px; */
+  }
+  
+  .contact-details p i {
+    margin-right: 5px; /* Add margin between icon and text */
+  }
+  
+  .left {
+    /* text-align: left; */
+    width: 50%; /* Adjust width as needed */
+    margin-right: 20px;
+  }
+  
+  .right {
+    /* text-align: right;  */
+    width: 50%; /* Adjust width as needed */
+    margin-right: -60px;
+  }
+  .box {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #eff4ff; /* Updated main box color */
+    position: relative; /* Add position relative for absolute positioning */
+    font-family: Calibri, sans-serif;
+  }
+  .box-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .line {
+    border-top: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%; /* Extend line across the box */
+  }
+  .tab {
+    margin-bottom: 10px;
+  }
+  .tab-box {
+    margin-bottom: 10px;
+  }
+  .allergy-box {
+    padding: 10px;
+  }
+  .severity-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    position: relative;
+  }
+  .severe,
+  .moderate, .mild {
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  .severe {
+    background-color: red;
+    color: white;
+  }
+  .moderate {
+    background-color: orange;
+    color: white;
+  }
+  .mild{
+    color: white;
+    background-color: #CDB232;
+  }
+  .brief-details {
+    font-size: 0.9em;
+  }
+  .box-heading {
+    margin-top: 20px; /* Add space above the heading */
+    margin-bottom: 10px; /* Reduce space below the heading */
+    font-weight: bold; /* Make heading bold */
+  }
+  .sub-heading {
+    font-weight: bold; /* Make subheading bold */
+    margin-top: 10px; /* Add space above the subheading */
+    margin-bottom: 10px; /* Add space below the subheading */
+  }
+  .sub-box {
+    background-color: white; /* Set background color */
+    border-radius: 10px;
+    padding: 10px; /* Add padding */
+    margin-bottom: 20px; /* Add space below the sub-box */
+    position: relative;
+    border: 1px solid #ccc;
+  }
+  .view-more {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em; /* Smaller font size */
+    margin-top: 10px; /* Add some margin at the top */
+    color: blue; /* Blue text color */
+    text-decoration: underline; /* Add underline */
+  }
+  
+  .caldenderinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .arrows button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
+  .days{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .day{
+    height: 100px;
+  }
+  
+  .day div{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(35, 35, 113);
+    width: 50px;
+    height: 50px;
+    background-color: white;
+  }
+  
+  .day p{
+    text-align: center;
+  }
+  
+  /* popup css */
+  #popupWrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Greyed out background */
+    z-index: 999; /* Ensure popup is on top */
+  }
+  
+  .popupContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  
+  
+  .closePopup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  
+  #content1, #content2, #content3, #content5{
+    width: 50%;
+  }
+  
+  .popupContent .days{
+    font-size: 25px;  
+  }
+  
+  .popupContent .day div{
+    height: 70px;
+    width: 70px;
+  }
+  
