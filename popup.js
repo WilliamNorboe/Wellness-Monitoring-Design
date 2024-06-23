@@ -1,7 +1,7 @@
 
 document.querySelectorAll('.openPopup').forEach(function(button) {
     button.addEventListener('click', function() {
-      var contentId = this.getAttribute('data-content');
+      var contentId =  this.getAttribute('data-content');
       // Hide all popup contents
       document.querySelectorAll('.popupContent').forEach(function(content) {
         content.style.display = 'none';
