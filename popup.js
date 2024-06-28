@@ -4,7 +4,7 @@ document.querySelectorAll('.openPopup').forEach(function(button) {
       var contentId =  this.getAttribute('data-content');
       // Hide all popup contents
       document.querySelectorAll('.popupContent').forEach(function(content) {
-        content.style.display = 'none';
+        content.style.display =  'none';
       });
       // Display the corresponding content
       document.getElementById(contentId).style.display = 'block';
